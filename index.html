@@ -46,15 +46,15 @@
         h2 {
             color: #333;
         }
-        .about-container {
+        .portfolio-item {
             display: flex;
-            gap: 20px;
-            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 20px;
         }
-        .about-container img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+        .portfolio-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
             object-fit: cover;
         }
         footer {
@@ -80,40 +80,68 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <div class="about-container">
-            <img src="paul.jpg" alt="Paul Roden Jr.">
-            <p>Hi, I'm Paul Roden Jr. I'm an indie mobile app developer with a passion for creating user-friendly and functional applications. Since 2008, I have specialized in iOS development using Swift and UIKit. My work focuses on building apps that improve people's lives while keeping a seamless user experience in mind. When I’m not coding, I enjoy exploring technology trends and listening to podcasts.</p>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <img src="paul.jpg" alt="Paul Roden Jr." style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+            <p>Hi, I'm Paul Roden Jr. I'm an indie mobile app developer with a passion for creating user-friendly and functional applications. I specialize in iOS development using Swift and UIKit, and I enjoy building apps that improve people's lives.</p>
         </div>
     </section>
 
     <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-item">
-            <div>
-                <h3>ProLight</h3>
-                <p>A multi-functional app with flashlight, weather, map, and fitness features. Built with Swift and integrated with HealthKit for a seamless user experience.</p>
-                <a href="https://apps.apple.com/us/app/prolight/id1173567157?uo=4" target="_blank">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
-                         alt="Download on the App Store" 
-                         style="width: 200px; height: auto;">
-                </a>
-            </div>
-            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d6/6e/6a/d66e6a75-0cea-baaa-8e10-b5957f00cc4d/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.jpg" alt="ProLight App" style="width: 120px; height: 120px; border-radius: 20px; object-fit: cover;">
+    <h2>Portfolio</h2>
+    <div class="portfolio-item">
+        <div>
+            <h3>ProLight</h3>
+            <p>A multi-functional app with flashlight, weather, map, and fitness features. Built with Swift and integrated with HealthKit for a seamless user experience.</p>
+            <!-- App Store Button Link -->
+            <a href="https://apps.apple.com/us/app/prolight/id1173567157?uo=4" target="_blank">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+                     alt="Download on the App Store" 
+                     style="width: 200px; height: auto;">
+            </a>
         </div>
-        <div class="portfolio-item">
-            <div>
-                <h3>TaskSync</h3>
-                <p>A task manager app that helps users stay organized. Includes features like task tracking, reminders, and calendar integration.</p>
-                <a href="https://apps.apple.com/us/app/tasksync/idYOUR_APP_ID" target="_blank">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
-                         alt="Download on the App Store" 
-                         style="width: 200px; height: auto;">
-                </a>
-            </div>
-            <img src="your-image.jpg" alt="TaskSync App" style="width: 120px; height: 120px; border-radius: 20px; object-fit: cover;">
+        <!-- Rounded Square Image -->
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d6/6e/6a/d66e6a75-0cea-baaa-8e10-b5957f00cc4d/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.jpg" alt="ProLight App" style="width: 120px; height: 120px; border-radius: 20px; object-fit: cover;">
+    </div>
+    <div class="portfolio-item">
+        <div>
+            <h3>TaskSync</h3>
+            <p>A task manager app that helps users stay organized. Includes features like task tracking, reminders, and calendar integration.</p>
+            <!-- App Store Button Link -->
+            <a href="https://apps.apple.com/us/app/tasksync/idYOUR_APP_ID" target="_blank">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+                     alt="Download on the App Store" 
+                     style="width: 200px; height: auto;">
+            </a>
         </div>
+        <!-- Rounded Square Image -->
+        <img src="your-image.jpg" alt="TaskSync App" style="width: 120px; height: 120px; border-radius: 20px; object-fit: cover;">
+    </div>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
         <ul>
+            <li>Swift & UIKit</li>
+            <li>SwiftUI</li>
+            <li>Core Data</li>
+            <li>HealthKit Integration</li>
+            <li>App Store Publishing</li>
+            <li>API Integration</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to work together or just want to say hello, feel free to reach out!</p>
+        <p>Email: <a href="mailto:per312@icloud.com">per312@icloud.com</a></p>
+        <a href="https://linkedin.com/in/paul-roden-4a1395167" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-tile.svg" alt="linkedin" width="40" height="40" /></a>
+        <a href="https://stackoverflow.com/users/3187794" target="_blank" rel="noreferrer"> <img src="https://vectorlogo.zone/logos/stackoverflow/stackoverflow-tile.svg" alt="3187794" width="40" height="40" /></a>
+        <a href="https://fb.com/paulroden86" target="_blank" rel="noreferrer"> <img src="https://vectorlogo.zone/logos/facebook/facebook-tile.svg" alt="paulroden86" width="40" height="40" /></a>
+        <a href="https://github.com/RodenPaul86" target="_blank" rel="noreferrer"> <img src="https://vectorlogo.zone/logos/github/github-tile.svg" alt="RodenPaul86" width="40" height="40" /></a>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 - Paul Roden Jr. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
