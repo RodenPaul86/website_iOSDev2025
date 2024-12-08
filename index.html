@@ -46,14 +46,6 @@
         h2 {
             color: #333;
         }
-        .about-image {
-            float: left;
-            margin-right: 20px;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
         .portfolio-item {
             display: flex;
             justify-content: space-between;
@@ -88,9 +80,10 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <img src="paul.jpg" alt="Paul Roden Jr." class="about-image">
-        <p>Hi, I'm Paul Roden Jr. I'm an indie mobile app developer with a passion for creating user-friendly and functional applications. I specialize in iOS development using Swift and UIKit, and I enjoy building apps that improve people's lives.</p>
-        <p>In my free time, I enjoy learning new technologies, collaborating with other developers, and exploring innovative solutions to everyday problems. My goal is to deliver high-quality apps that resonate with users and make their lives better.</p>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <img src="paul.jpg" alt="Paul Roden Jr." style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+            <p>Hi, I'm Paul Roden Jr. I'm an indie mobile app developer with a passion for creating user-friendly and functional applications. I specialize in iOS development using Swift and UIKit, and I enjoy building apps that improve people's lives.</p>
+        </div>
     </section>
 
     <section id="portfolio">
