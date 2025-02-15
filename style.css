@@ -174,8 +174,6 @@ section {
     height: 400px;
     width: 400px;
     margin: auto;
-    clip-path: circle(50%);
-    object-fit: cover;
 }
 
 .section__text {
