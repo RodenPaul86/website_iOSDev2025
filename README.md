@@ -3,7 +3,7 @@
 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
     <a href="https://paulrodenjr.org" target="_blank" rel="noopener noreferrer">
-        <img src="assets/Website Screenshot.png" alt="Website Preview" width="600" />
+        <img src="assets/Website-Screenshot.png" alt="Website Preview" width="600" />
     </a>
     <h3></h3>
     <p>Explore my latest iOS projects, showcasing all my skills in Swift, SwiftUI, UIKit and Objective-C.</p>
