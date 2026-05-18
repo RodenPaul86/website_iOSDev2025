@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul Roden Jr, Indie iOS Developer</title>
+    <meta name="author" content="Paul Roden Jr.">
+    <title>Paul Roden Jr | Indie iOS Dev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <script>
+        const apps = [
+            { id: "1173567157" }, // ProLight
+            { id: "6740615012" }, // DocMatic
+            { id: "1161557247" }, // Noel
+            { id: "1205737245" }, // Astroid Saga
+            { id: "6737742961" }  // TaskSync
+            // Add more as needed...
+        ];
+
+        const randomApp = apps[Math.floor(Math.random() * apps.length)];
+
+        const meta = document.createElement("meta");
+        meta.name = "apple-itunes-app";
+        meta.content = `app-id=${randomApp.id}`;
+        document.head.appendChild(meta);
+    </script>
 </head>
 <body>
     <nav id="desktop-nav">
@@ -243,7 +262,7 @@
     <div class="contact-info-upper-container">
         <div class="contact-info-container">
             <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-            <p><a href="mailto:contact@paulrodenjr.org">contact@paulrodenjr.org</a></p>
+            <p><a href="mailto:contact@paulrodenjr.dev">contact@paulrodenjr.dev</a></p>
         </div>
         <div class="contact-info-container">
             <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
